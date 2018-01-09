@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+/*  Esto hizo que los elementos ya no se pusieran hacia abajo.
+*/  
+  margin: 0;
+  padding: 0;
+}
+
+
+.row:before,
+.row:after {
+  content:"";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row{
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+[class*="col-"]{
+   float: left;
+   min-height: 10px;
+   padding: 20px;
+} 
+
+.container{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+header, footer {
+	background-color: #F78E69;
+}
+
+.col-12 {
+  width: calc(100%);
+}
+
+.first-image {
+  background-image: url(assets/uno.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 35em;
+}
+
+.line {
+	height: 2%;
+	background-color: #F78E69;
+}
+
+.second-image {
+  background-image: url(assets/tres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 35em;
+}
+
+.four-images{
+	background-color: #ABE188;
+	height: 300px;
+}
+
+.third-image {
+  background-image: url(assets/dos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 35em;
+}
+
+
+
